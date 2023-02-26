@@ -1,0 +1,14 @@
+<form class="form-control">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" [(ngModel)] = "email" [ngModelOptions]="{standalone:true}" class="form-control"  aria-describedby="emailHelp" placeholder="Enter email" name="email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" [(ngModel)] = "password" [ngModelOptions]="{standalone:true}" class="form-control"  placeholder="Password" name="password">
+    </div>
+    
+    <button type="submit" class="btn btn-primary" (click)="login()">Submit</button>
+  </form><br><br><br>
+  <h3><a href="userRegistration">Not a User ? Create one</a></h3>

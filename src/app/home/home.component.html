@@ -1,0 +1,56 @@
+<div class="container">
+
+    <div class="header">
+        <h1 style="font-size: 60px;" style="text-align: center;">WELCOME TO MEDICARE</h1>
+    </div>
+    <div class="SearchP">
+    <input type="text" class="search" placeholder="Search For Products!">
+    <input type="submit" class="bg bg-success but" value="Search">
+</div>
+    <div class="main" style="align-items: center;">
+
+        <div style="border: 1px solid red; display: flex; ">
+            
+            <ul>
+               
+                
+                <li *ngFor="let product of CutomerArray|filter:searchtext">
+                    <div class="row" >
+                    <div class="col" style="margin: 5px; display: inline-block; margin: 10px;">
+                        <img  src="assets/img{{product.productid}}.jpeg" alt="">
+                                <p>  {{product.productName}}</p>
+                           
+
+
+                            <div class="medicom">
+                                {{product.productCompany}}
+                            </div>
+
+
+
+                            <div class="medicom">
+                                {{product.productTags}}
+                            </div>
+
+                            <div class="medipri">
+                                {{product.productPrice}} <i class="fa fa-rupee-sign"></i>
+
+                            </div>
+                            <input type="submit" value="Add to cart" (click)="addtocart(product)" routerLink="cart">
+
+
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+
+
+
+
+        </div>
+
+
+    </div>
+
+</div>

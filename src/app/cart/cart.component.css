@@ -1,0 +1,38 @@
+img
+{
+    width: 100px;
+    height: 100px;
+}
+div.image
+{
+    width: 200px;
+    height: 100px; 
+    margin:20px;
+}
+div.mediname
+{
+   
+    color: burlywood;
+    font-size: 1rem;
+    font: bold;
+    display: flex;
+    
+    
+}
+
+div.medicom
+{
+    
+    color: rgb(128, 251, 74);
+    background-color: rgb(202, 202, 202);
+    border: 1px solid azure;
+    
+}
+div.medipri
+{
+    
+    color: burlywood;
+    font-size: 0.8rem;
+    
+    
+}

@@ -1,0 +1,31 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col"><pre>   </pre></th>
+        <th scope="col">Medicine Name</th>
+        <th scope="col">Company</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    
+    
+      <tbody *ngFor="let product of CutomerArray">
+      <tr>
+        <th scope="row"><img class="image" src="assets/img{{product.productid}}.jpeg" alt=""></th>
+        <td>{{product.productName}}</td>
+        <td>{{product.productCompany}}</td>
+        <td>{{product.productPrice}}</td>
+        
+    </tbody>
+    <tr>
+        <td>Total Price</td>
+        <td></td>
+        <td></td>
+        <td>{{totalprice}}</td>
+
+    </tr>
+    
+  </table>
+
+
+  <input type="submit" value="Procced to pay" class="bg bg-success" style="margin-left: 45%; font-size: 30px;">

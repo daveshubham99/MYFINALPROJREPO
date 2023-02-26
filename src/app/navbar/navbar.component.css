@@ -1,0 +1,14 @@
+.search
+{
+    height: 35px;
+    width: 500px;
+    border-radius: 6px;
+    margin-left: 30px;
+    align-items: center;
+}
+.but
+{
+    height: 35px;
+    border-radius: 6px;
+    margin-left: 0;
+}
